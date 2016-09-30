@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
+   <children>
+      <BorderPane fx:id="panelPrincipal" prefHeight="639.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Pane prefHeight="480.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuBar prefHeight="36.0" prefWidth="640.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Cadastro">
+                        <items>
+                          <MenuItem fx:id="menuUF" mnemonicParsing="false" onAction="#onMenuUF" text="UF" />
+                              <MenuItem fx:id="menuCidade" mnemonicParsing="false" onAction="#onMenuCidade" text="Cidade" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

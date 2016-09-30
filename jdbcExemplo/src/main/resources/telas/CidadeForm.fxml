@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.cidadeController">
+   <children>
+      <BorderPane fx:id="panelPrincipal" prefHeight="603.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Pane prefHeight="593.0" prefWidth="637.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="40.0" layoutY="60.0" text="Código:" />
+                  <TextField fx:id="tfCodigo" disable="true" editable="false" layoutX="95.0" layoutY="55.0" prefHeight="27.0" prefWidth="65.0" />
+                  <TextField fx:id="tfNome" layoutX="85.0" layoutY="96.0" prefHeight="27.0" prefWidth="197.0" />
+                  <Label layoutX="38.0" layoutY="101.0" text="Nome:" />
+                  <Button layoutX="143.0" layoutY="210.0" mnemonicParsing="false" onAction="#onSalvar" text="Salvar" />
+                  <Button layoutX="78.0" layoutY="210.0" mnemonicParsing="false" onAction="#onNovo" text="Novo" />
+                  <TableView fx:id="tblCidade" layoutX="15.0" layoutY="263.0" prefHeight="300.0" prefWidth="613.0">
+                     <columns>
+                        <TableColumn fx:id="tcCodigo" prefWidth="150.0" text="Código" />
+                        <TableColumn fx:id="tcNome" prefWidth="273.0" resizable="false" text="Nome" />
+                        <TableColumn fx:id="tcUF" prefWidth="189.0" resizable="false" text="UF" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="218.0" layoutY="210.0" mnemonicParsing="false" onAction="#onExcluir" text="Excluir" />
+                  <Label layoutX="47.0" layoutY="139.0" text="UF" />
+                  <ComboBox fx:id="cbUF" layoutX="85.0" layoutY="134.0" prefHeight="25.0" prefWidth="197.0" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
